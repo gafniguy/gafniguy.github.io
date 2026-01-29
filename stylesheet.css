@@ -88,6 +88,22 @@ a:hover {
   display: inline-block;
 }
 
+.profile-photo-frame {
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-photo {
+  transition: transform 0.3s ease;
+  transform: scale(1);
+  display: block;
+}
+
+.profile-photo-frame:hover .profile-photo {
+  transform: scale(1.12);
+}
+
 .social-separator {
   display: inline-block;
   margin: 0 8px;
