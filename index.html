@@ -31,19 +31,42 @@
                   Guy Gafni
                 </p>
                 <p style="text-align:center">
-                  <a href="https://scholar.google.com/citations?user=PATfNhwAAAAJ&hl=en" style="font-size: 20px; font-style: normal !important;">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://x.com/gafniguy" style="font-size: 20px; font-style: normal !important;">Twitter</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/gafniguy" style="font-size: 20px; font-style: normal !important;">Github</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/guy-gafni/" style="font-size: 20px; font-style: normal !important;">LinkedIn</a>
+                  <a class="social-link" href="https://scholar.google.com/citations?user=PATfNhwAAAAJ&hl=en">
+                    <img src="https://cdn.simpleicons.org/googlescholar/1772d0" alt="Google Scholar">
+                    <span>Scholar</span>
+                  </a>
+                  <span class="social-separator">·</span>
+                  <a class="social-link" href="https://x.com/gafniguy">
+                    <img src="https://cdn.simpleicons.org/x/1772d0" alt="X (Twitter)">
+                    <span>Twitter</span>
+                  </a>
+                  <span class="social-separator">·</span>
+                  <a class="social-link" href="https://github.com/gafniguy">
+                    <img src="https://cdn.simpleicons.org/github/1772d0" alt="GitHub">
+                    <span>Github</span>
+                  </a>
+                  <span class="social-separator">·</span>
+                  <a class="social-link" href="https://www.linkedin.com/in/guy-gafni/">
+                    <img src="https://www.svgrepo.com/show/157006/linkedin.svg" alt="LinkedIn">
+                    <span>LinkedIn</span>
+                  </a>
+                </p>
+                <p style="text-align:center; margin-top:6px; margin-bottom:16px;">
+                  <button class="contact-button" id="contact-button" type="button">Contact Me</button>
+                </p>
+                <p class="bio-pills" style="text-align:center;">
+                  <span class="bio-pill">Video Diffusion</span>
+                  <span class="bio-pill">Neural Rendering</span>
+                  <span class="bio-pill">Human Avatars</span>
+                  <span class="bio-pill">Pipio AI</span>
                 </p>
                 <p>
-                  I'm <strong>Co-founder and CTO at <a href="https://pipio.ai/">Pipio AI</a></strong>, where we're building foundation video model for talking humans. A video diffusion model with perfect lip sync, designed for video editing workflows.
+                  I'm <strong>Co-founder and CTO at <a href="https://pipio.ai/">Pipio AI</a></strong>, where we're building a foundation video model for talking humans. A video diffusion model with perfect lip sync, designed for video editing workflows.
                   <br>
                   <br>
                   Before that, I was a PhD candidate at the Technical University of Munich, <strong><a href="https://niessnerlab.org//">Visual Computing and AI Lab</a></strong>, where I was advised by Prof. Matthias Nießner (w/ Prof. Justus Thies) working on neural rendering, NeRFs, reconstruction and re-rendering of faces. 
                               </p>
-
-                <p style="text-align:center; margin-top:8px;">
+                <p class="bio-location" style="text-align:center; margin-top:8px;">
                   📍 Munich, Germany
                 </p>
               </td>
@@ -66,13 +89,13 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-<tr onmouseout="edityourself_stop()" onmouseover="edityourself_start()">
+<tr class="paper-row highlight-row" onmouseout="edityourself_stop()" onmouseover="edityourself_start()">
   <td style="padding:16px;width:20%;vertical-align:middle">
     <div class="one">
       <div class="two" id='edityourself_image'>
-        <img src='images/edityourself.jpg' width=100%>
+        <img src='images/edityourself_teaser.png' width=100%>
       </div>
-      <img src='images/edityourself.jpg' width=100%>
+      <img src='images/edityourself_teaser.png' width=100%>
     </div>
     <script type="text/javascript">
       function edityourself_start() {
@@ -86,8 +109,9 @@
     </script>
   </td>
   <td style="padding:8px;width:80%;vertical-align:middle">
-    <a href="https://cautious-adventure-5ly6e9e.pages.github.io/">
+    <a class="paper-title-link" href="https://pipioinc.github.io/edityourself/">
       <span class="papertitle">EditYourself: Flexible Audio-Driven Generation and Manipulation of Talking Head Videos</span>
+      <span class="new-badge">NEW</span>
     </a>
     <br>
     John Flynn,
@@ -95,13 +119,14 @@
     Dimitar Dinev,
     Sam Nhut Nguyen,
     Hayk Poghosyan,
+    Manuel Toribio,
     Sandipan Banerjee,
     <strong>Guy Gafni</strong>
     <br>
-    <em>ArXiv</em>, 2026
+    <span class="venue-tag">ArXiv</span> 2026
     <br>
-    <a href="https://cautious-adventure-5ly6e9e.pages.github.io/">project page</a>
-    /
+    <a href="https://pipioinc.github.io/edityourself/">project page</a>
+    <span class="paper-separator">·</span>
     <a href="#">arXiv</a>
     <p></p>
     <p>
@@ -110,7 +135,7 @@
   </td>
 </tr>
 
-<tr onmouseout="semantify_stop()" onmouseover="semantify_start()">
+<tr class="paper-row" onmouseout="semantify_stop()" onmouseover="semantify_start()">
   <td style="padding:16px;width:20%;vertical-align:middle">
     <div class="one">
       <div class="two" id='semantify_image'>
@@ -138,11 +163,11 @@
     <strong>Guy Gafni</strong>,
     <a href="https://www.idc.ac.il/en/pages/faculty.aspx?username=shamir">Ariel Shamir</a>
     <br>
-    <em>ICCV</em>, 2023
+    <span class="venue-tag">ICCV</span> 2023
     <br>
     <a href="https://omergral.github.io/Semantify/">project page</a>
-    /
-    <a href="https://arxiv.org/abs/2308.07415">arXiv</a>
+    <span class="paper-separator">·</span>
+    <a href="https://doi.org/10.48550/arXiv.2308.07415">arXiv</a>
     <br>
     <a href="https://github.com/Omergral/Semantify" style="text-decoration: none;">
       <img src="https://img.shields.io/github/stars/Omergral/Semantify?style=social" alt="GitHub stars" style="vertical-align: middle; margin-right: 5px;">
@@ -158,7 +183,7 @@
   </td>
 </tr>
 
-<tr onmouseout="facial4d_stop()" onmouseover="facial4d_start()">
+<tr class="paper-row" onmouseout="facial4d_stop()" onmouseover="facial4d_start()">
   <td style="padding:16px;width:20%;vertical-align:middle">
     <div class="one">
       <div class="two" id='facial4d_image'>
@@ -187,11 +212,11 @@
     <a href="https://zollhoefer.com/">Michael Zollhöfer</a>,
     <a href="https://www.niessnerlab.org/members/matthias-niessner/profile.html">Matthias Nießner</a>
     <br>
-    <em>CVPR (Oral)</em>, 2021
+    <span class="venue-tag">CVPR Oral</span> 2021
     <br>
     <a href="https://gafniguy.github.io/4D-Facial-Avatars/">project page</a>
-    /
-    <a href="https://arxiv.org/abs/2012.03065">arXiv</a>
+    <span class="paper-separator">·</span>
+    <a href="https://doi.org/10.48550/arXiv.2012.03065">arXiv</a>
     <br>
     <a href="https://github.com/gafniguy/4D-Facial-Avatars" style="text-decoration: none;">
       <img src="https://img.shields.io/github/stars/gafniguy/4D-Facial-Avatars?style=social" alt="GitHub stars" style="vertical-align: middle; margin-right: 5px;">
@@ -217,62 +242,40 @@
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            
-           
-            <tr>
-              <td align="center" style="padding:8px;width:12%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #c6b89e;">
-								 <h2>Academic Service</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:88%;vertical-align:center">
+          <table class="misc-table"><tbody>
+            <tr class="misc-row">
+              <td class="misc-label">🎓 Academic Service</td>
+              <td class="misc-content">
                 Reviewer for ICCV, CVPR, SIGGRAPH and SIGGRAPH ASIA
               </td>
             </tr>
-						
-						
-           
-            <tr>
-              <td align="center" style="padding:8px;width:12%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #edd892;">
-								 <h2>Teaching</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:88%;vertical-align:center">
-                Introduction to Deep Learning (TU Munich)
-                <br>
-                Seminar on Neural Radiance Fields (TU Munich)
-                <br>
-                Calculus 3 (TAU)
-              </td>
-            </tr>
-            
-            <tr>
-              <td align="center" style="padding:8px;width:12%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #c6b89e;">
-								 <h2>Additional Stuff</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:88%;vertical-align:center">
-                <ul style="margin:0; padding-left:20px;">
-                  <li>Common-Ground AI (Acq. by Apple in 2024) - Advisor to the CTO and R&D teams, guiding the research roadmap for 3D human reconstruction from mobile devices: faces/heads, meshing, neural rendering, dynamic animation of textures, hair reconstruction, and re-animation of the reconstructed geometry in real-time.
-                  </li>
-                  <li>As a master student at TUM, I worked on neural rendering of point clouds for novel view synthesis (2019), and face replacement using CycleGAN in texture space of 3DMMs (2018)</li>
-                  <li>I obtained my Bsc in Mathematics and Computer Science from Tel Aviv University (2017)</li>
-                  <li>Worked at PTC on Subdivision Surfaces and processing of its control meshes, contributing to the Creo CAD software (2017)</li>
-
-                  
+            <tr class="misc-row">
+              <td class="misc-label">👩‍🏫 Teaching</td>
+              <td class="misc-content">
+                <ul>
+                  <li>Introduction to Deep Learning (TU Munich)</li>
+                  <li>Seminar on Neural Radiance Fields (TU Munich)</li>
+                  <li>Calculus 3 (TAU)</li>
                 </ul>
               </td>
             </tr>
-            
+            <tr class="misc-row">
+              <td class="misc-label">✨ Additional Stuff</td>
+              <td class="misc-content">
+                <ul>
+                  <li>Common-Ground AI (Acq. by Apple in 2024) - Advisor to the CTO and R&D teams, guiding the research roadmap for 3D human reconstruction from mobile devices: faces/heads, meshing, neural rendering, dynamic animation of textures, hair reconstruction, and re-animation of the reconstructed geometry in real-time.</li>
+                  <li>As a master student at TUM, I worked on neural rendering of point clouds for novel view synthesis (2019), and face replacement using CycleGAN in texture space of 3DMMs (2018)</li>
+                  <li>I obtained my Bsc in Mathematics and Computer Science from Tel Aviv University (2017)</li>
+                  <li>Worked at PTC on Subdivision Surfaces and processing of its control meshes, contributing to the Creo CAD software (2017)</li>
+                </ul>
+              </td>
+            </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:0px">
                 <br>
-                <p style="text-align:right;font-size:small;">
+                <p class="site-credit">
                   Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a> from Jon Barron. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
                 </p>
               </td>
@@ -281,36 +284,93 @@
         </td>
       </tr>
     </table>
+    <div class="contact-pane" id="contact-pane" aria-hidden="true">
+      <div class="contact-pane-content" role="dialog" aria-modal="true" aria-labelledby="contact-pane-title">
+        <button class="contact-pane-close" id="contact-pane-close" type="button" aria-label="Close contact form">×</button>
+        <h3 id="contact-pane-title">Contact</h3>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfE7k8pR74Cgzl8Kcq_nGveRDg5AEqeLiWJuOQY5ADe7wpaqw/viewform?embedded=true"
+          title="Contact form"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          loading="lazy">
+          Loading…
+        </iframe>
+      </div>
+    </div>
     <script>
-      // Function to fetch citation count from Google Scholar
+      // Function to fetch citation count from Google Scholar (with fallbacks)
       async function fetchCitationCount(citationId, badgeId) {
-        try {
-          // Use a CORS proxy to fetch Google Scholar page
-          const proxyUrl = 'https://api.allorigins.win/get?url=';
-          const scholarUrl = encodeURIComponent(`https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PATfNhwAAAAJ&citation_for_view=${citationId}`);
-          
-          const response = await fetch(proxyUrl + scholarUrl);
-          const data = await response.json();
-          const html = data.contents;
-          
-          // Extract citation count using regex
-          const match = html.match(/Cited by (\d+)/);
-          if (match && match[1]) {
-            const count = match[1];
-            const badge = document.getElementById(badgeId);
-            if (badge) {
-              badge.src = `https://img.shields.io/badge/Citations-${count}-blue`;
-              badge.alt = `Citations: ${count}`;
-            }
-          }
-        } catch (error) {
-          console.error('Error fetching citation count:', error);
-          // Fallback: show "N/A" if fetch fails
+        const scholarUrl = `https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PATfNhwAAAAJ&citation_for_view=${citationId}`;
+        const proxyUrls = [
+          'https://api.allorigins.win/get?url=',
+          'https://r.jina.ai/http://r.jina.ai/http://'
+        ];
+        const cacheKey = `citations:${citationId}`;
+
+        function updateBadge(count, isFallback) {
           const badge = document.getElementById(badgeId);
-          if (badge) {
+          if (!badge) return;
+          if (count) {
+            badge.src = `https://img.shields.io/badge/Citations-${count}-blue`;
+            badge.alt = `Citations: ${count}${isFallback ? ' (cached)' : ''}`;
+          } else {
             badge.src = 'https://img.shields.io/badge/Citations-N%2FA-lightgrey';
             badge.alt = 'Citations: N/A';
           }
+        }
+
+        function parseCitationCount(html) {
+          const match = html && html.match(/Cited by (\d+)/);
+          return match && match[1] ? match[1] : null;
+        }
+
+        function readCachedCount() {
+          try {
+            const cached = localStorage.getItem(cacheKey);
+            if (!cached) return null;
+            const parsed = JSON.parse(cached);
+            if (!parsed || !parsed.count) return null;
+            const maxAgeMs = 1000 * 60 * 60 * 24 * 14;
+            if (Date.now() - parsed.timestamp > maxAgeMs) return null;
+            return parsed.count;
+          } catch (error) {
+            return null;
+          }
+        }
+
+        function writeCachedCount(count) {
+          try {
+            localStorage.setItem(cacheKey, JSON.stringify({ count, timestamp: Date.now() }));
+          } catch (error) {
+            // Ignore cache failures
+          }
+        }
+
+        const cachedCount = readCachedCount();
+        if (cachedCount) {
+          updateBadge(cachedCount, true);
+        }
+
+        for (const proxyUrl of proxyUrls) {
+          try {
+            const response = await fetch(proxyUrl + encodeURIComponent(scholarUrl));
+            const data = await response.text();
+            const html = proxyUrl.includes('allorigins') ? JSON.parse(data).contents : data;
+            const count = parseCitationCount(html);
+            if (count) {
+              updateBadge(count, false);
+              writeCachedCount(count);
+              return;
+            }
+          } catch (error) {
+            // Try next proxy
+          }
+        }
+
+        if (!cachedCount) {
+          updateBadge(null, false);
         }
       }
       
@@ -321,6 +381,36 @@
         // 4D Facial Avatars: PATfNhwAAAAJ:u5HHmVD_uO8C
         fetchCitationCount('PATfNhwAAAAJ:u5HHmVD_uO8C', 'facial4d-citation-badge');
       });
+
+      // Contact pane controls
+      const contactButton = document.getElementById('contact-button');
+      const contactPane = document.getElementById('contact-pane');
+      const contactPaneClose = document.getElementById('contact-pane-close');
+
+      function openContactPane() {
+        contactPane.classList.add('is-open');
+        contactPane.setAttribute('aria-hidden', 'false');
+      }
+
+      function closeContactPane() {
+        contactPane.classList.remove('is-open');
+        contactPane.setAttribute('aria-hidden', 'true');
+      }
+
+      if (contactButton && contactPane && contactPaneClose) {
+        contactButton.addEventListener('click', openContactPane);
+        contactPaneClose.addEventListener('click', closeContactPane);
+        contactPane.addEventListener('click', function(event) {
+          if (event.target === contactPane) {
+            closeContactPane();
+          }
+        });
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'Escape') {
+            closeContactPane();
+          }
+        });
+      }
     </script>
   </body>
 </html>
