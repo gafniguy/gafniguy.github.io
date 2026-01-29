@@ -241,7 +241,7 @@ h2 {
 }
 
 .contact-pane.is-open {
-  display: flex;
+  display: flex !important;
 }
 
 .contact-pane-content {
