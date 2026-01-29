@@ -302,8 +302,8 @@
         <h3 id="legal-pane-title">Impressum &amp; Datenschutzerklärung</h3>
         <div class="legal-pane-body" id="legal-pane-body">
           <p class="legal-subtitle">Angaben gemäß § 5 DDG</p>
-          <p>Guy Gafni, Hornstr. 2, 80797 München, Deutschland</p>
-          <p>Kontakt E-Mail: <span class="email-obfuscated" data-user="gafniguy" data-domain="gmail.com" aria-label="gafniguy@gmail.com"></span></p>
+          <p><img class="address-image" id="address-obfuscated" alt="Address"></p>
+          <p>Kontakt E-Mail: <img class="email-image" id="email-obfuscated" alt="Email address"></p>
           <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: siehe Impressum oben.</p>
           <ol class="legal-list">
             <li>
@@ -454,6 +454,46 @@
         consentPrivacyLink.addEventListener('click', function() {
           openLegalPane();
         });
+      }
+
+      // Obfuscate address text with JS (render to image)
+      const addressImage = document.getElementById('address-obfuscated');
+      if (addressImage) {
+        const addressText = 'Guy Gafni, Hornstr. 2, 80797 München, Deutschland';
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+        const fontSize = 14;
+        const fontFamily = 'Lato, Verdana, Helvetica, sans-serif';
+        context.font = `${fontSize}px ${fontFamily}`;
+        const textWidth = Math.ceil(context.measureText(addressText).width);
+        const padding = 2;
+        canvas.width = textWidth + padding * 2;
+        canvas.height = fontSize + padding * 2;
+        context.font = `${fontSize}px ${fontFamily}`;
+        context.fillStyle = '#4b5b6b';
+        context.textBaseline = 'top';
+        context.fillText(addressText, padding, padding);
+        addressImage.src = canvas.toDataURL('image/png');
+      }
+
+      // Obfuscate email text with JS (render to image)
+      const emailImage = document.getElementById('email-obfuscated');
+      if (emailImage) {
+        const emailText = 'gafniguy@gmail.com';
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+        const fontSize = 14;
+        const fontFamily = 'Lato, Verdana, Helvetica, sans-serif';
+        context.font = `${fontSize}px ${fontFamily}`;
+        const textWidth = Math.ceil(context.measureText(emailText).width);
+        const padding = 2;
+        canvas.width = textWidth + padding * 2;
+        canvas.height = fontSize + padding * 2;
+        context.font = `${fontSize}px ${fontFamily}`;
+        context.fillStyle = '#4b5b6b';
+        context.textBaseline = 'top';
+        context.fillText(emailText, padding, padding);
+        emailImage.src = canvas.toDataURL('image/png');
       }
 
       // Legal pane controls

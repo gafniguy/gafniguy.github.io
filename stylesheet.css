@@ -299,6 +299,18 @@ h2 {
   margin: 0 0 10px 0;
 }
 
+.address-image {
+  height: 16px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.email-image {
+  height: 16px;
+  width: auto;
+  vertical-align: middle;
+}
+
 .legal-section-title {
   margin: 12px 0 6px 0;
   font-size: 16px;
