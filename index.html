@@ -245,7 +245,7 @@
               <td class="misc-label">👩‍🏫 Teaching</td>
               <td class="misc-content">
                 <ul>
-                  <li>Introduction to Deep Learning (TU Munich)</li>
+                  <li><a href="https://niessner.github.io/I2DL/">Introduction to Deep Learning (TU Munich)</a></li>
                   <li>Seminar on Neural Radiance Fields (TU Munich)</li>
                   <li>Calculus 3 (TAU)</li>
                 </ul>
@@ -343,7 +343,7 @@
     </div>
     <div class="consent-banner" id="consent-banner" role="dialog" aria-live="polite" aria-label="Cookie consent">
       <div class="consent-text">
-        This site uses analytics to understand traffic. You can opt in or out.
+        Google Analytics 4 collects pseudonymous information such as site traffic to help improve site content. For more details, see the <button class="consent-link" type="button" id="consent-privacy-link">Privacy Policy</button> and <a href="https://policies.google.com/technologies/partner-sites">Google’s Data Usage Policy</a>.
       </div>
       <div class="consent-actions">
         <button class="consent-button consent-decline" id="consent-decline" type="button">Decline</button>
@@ -435,6 +435,7 @@
 
       const consentAccept = document.getElementById('consent-accept');
       const consentDecline = document.getElementById('consent-decline');
+      const consentPrivacyLink = document.getElementById('consent-privacy-link');
       if (consentAccept) {
         consentAccept.addEventListener('click', function() {
           setConsent('accepted');
@@ -447,6 +448,11 @@
           setConsent('declined');
           applyConsent('declined');
           hideConsentBanner();
+        });
+      }
+      if (consentPrivacyLink) {
+        consentPrivacyLink.addEventListener('click', function() {
+          openLegalPane();
         });
       }
 

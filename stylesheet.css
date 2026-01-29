@@ -372,16 +372,16 @@ h2 {
   position: fixed;
   left: 16px;
   bottom: 16px;
-  background: #fffdf5;
-  border: 1px solid #f0e2b7;
+  background: #fff9e8;
+  border: 1px solid #e9d7a6;
   border-radius: 10px;
   padding: 12px 14px;
-  box-shadow: 0 10px 24px rgba(16, 24, 40, 0.12);
+  box-shadow: 0 12px 26px rgba(16, 24, 40, 0.14);
   display: flex;
   align-items: center;
   gap: 12px;
   z-index: 10000;
-  max-width: min(92vw, 520px);
+  max-width: min(94vw, 680px);
 }
 
 .consent-banner.is-hidden {
@@ -389,9 +389,29 @@ h2 {
 }
 
 .consent-text {
-  color: #4b5b6b;
-  font-size: 13px;
+  color: #3f4e5d;
+  font-size: 14px;
   line-height: 1.4;
+}
+
+.consent-text a {
+  color: #2f5fa2;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  font-size: inherit;
+}
+
+.consent-link {
+  border: none;
+  background: none;
+  color: #2f5fa2;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
 
 .consent-actions {
@@ -403,7 +423,7 @@ h2 {
 .consent-button {
   border-radius: 6px;
   padding: 6px 10px;
-  font-size: 12px;
+  font-size: 13px;
   border: 1px solid #c9d3de;
   background: #ffffff;
   color: #3a4a5e;
@@ -419,6 +439,7 @@ h2 {
   background: #e6f1ff;
   border-color: #b7d4f7;
   color: #235a9c;
+  font-weight: 700;
 }
 
 .consent-accept:hover,
