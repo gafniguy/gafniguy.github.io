@@ -224,6 +224,130 @@ h2 {
   color: #2f3b46;
 }
 
+.legal-links {
+  text-align: center;
+  margin-top: 6px;
+}
+
+.legal-link {
+  border: none;
+  background: none;
+  color: #556575;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.legal-link:hover,
+.legal-link:focus {
+  color: #2f3b46;
+}
+
+.legal-separator {
+  margin: 0 6px;
+  color: #9aa4b2;
+}
+
+.legal-copy {
+  font-size: 12px;
+  color: #8a94a3;
+}
+
+.legal-pane {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 10001;
+}
+
+.legal-pane.is-open {
+  display: flex;
+}
+
+.legal-pane-content {
+  position: relative;
+  width: min(760px, 95vw);
+  max-height: 80vh;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px 18px 8px 18px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+  overflow: auto;
+}
+
+.legal-pane-content h3 {
+  margin: 0 0 10px 0;
+  font-weight: normal;
+  font-size: 22px;
+  text-align: center;
+}
+
+.legal-pane-body {
+  font-size: 14px;
+  color: #4b5b6b;
+  line-height: 1.6;
+}
+
+.legal-pane-body p {
+  margin: 0 0 10px 0;
+}
+
+.legal-section-title {
+  margin: 12px 0 6px 0;
+  font-size: 16px;
+  color: #2f3b46;
+}
+
+.legal-subtitle {
+  color: #2f3b46;
+  font-size: inherit;
+  margin-top: -2px;
+}
+
+.legal-list {
+  margin: 8px 0 0 18px;
+  padding: 0;
+}
+
+.legal-list li {
+  margin: 0 0 12px 0;
+}
+
+.legal-list li strong {
+  display: block;
+  color: #2f3b46;
+  margin-bottom: 4px;
+}
+
+.email-obfuscated::after {
+  content: attr(data-user) "@" attr(data-domain);
+  color: #4b5b6b;
+}
+
+.legal-pane-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  color: #555555;
+}
+
+.legal-pane-close:hover,
+.legal-pane-close:focus {
+  color: #111111;
+}
+
 .site-credit strong {
   font-size: inherit;
   font-weight: 700;
@@ -242,6 +366,64 @@ h2 {
 
 .contact-pane.is-open {
   display: flex !important;
+}
+
+.consent-banner {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  background: #fffdf5;
+  border: 1px solid #f0e2b7;
+  border-radius: 10px;
+  padding: 12px 14px;
+  box-shadow: 0 10px 24px rgba(16, 24, 40, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 10000;
+  max-width: min(92vw, 520px);
+}
+
+.consent-banner.is-hidden {
+  display: none;
+}
+
+.consent-text {
+  color: #4b5b6b;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.consent-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.consent-button {
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  border: 1px solid #c9d3de;
+  background: #ffffff;
+  color: #3a4a5e;
+  cursor: pointer;
+}
+
+.consent-button:hover,
+.consent-button:focus {
+  border-color: #9aa7b6;
+}
+
+.consent-accept {
+  background: #e6f1ff;
+  border-color: #b7d4f7;
+  color: #235a9c;
+}
+
+.consent-accept:hover,
+.consent-accept:focus {
+  background: #d8e9ff;
 }
 
 .contact-pane-content {

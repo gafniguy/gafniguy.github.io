@@ -9,15 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260129">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N20KYCQTQ3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-N20KYCQTQ3');
-</script>
+<!-- Google Analytics loaded after consent -->
   </head>
 
   <body>
@@ -278,6 +270,11 @@
                 <p class="site-credit">
                   Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a> from Jon Barron. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
                 </p>
+                <p class="legal-links">
+                  <button class="legal-link" type="button" id="legal-link">Impressum &amp; Datenschutzerklärung</button>
+                  <span class="legal-separator">·</span>
+                  <span class="legal-copy">© 2026 Guy Gafni · All rights reserved</span>
+                </p>
               </td>
             </tr>
           </tbody></table>
@@ -299,7 +296,195 @@
         </iframe>
       </div>
     </div>
+    <div class="legal-pane" id="legal-pane" aria-hidden="true">
+      <div class="legal-pane-content" role="dialog" aria-modal="true" aria-labelledby="legal-pane-title">
+        <button class="legal-pane-close" id="legal-pane-close" type="button" aria-label="Close legal information">×</button>
+        <h3 id="legal-pane-title">Impressum &amp; Datenschutzerklärung</h3>
+        <div class="legal-pane-body" id="legal-pane-body">
+          <p class="legal-subtitle">Angaben gemäß § 5 DDG</p>
+          <p>Guy Gafni, Hornstr. 2, 80797 München, Deutschland</p>
+          <p>Kontakt E-Mail: <span class="email-obfuscated" data-user="gafniguy" data-domain="gmail.com" aria-label="gafniguy@gmail.com"></span></p>
+          <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: siehe Impressum oben.</p>
+          <ol class="legal-list">
+            <li>
+              <strong>Datenschutz auf einen Blick</strong>
+              <p>Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
+            </li>
+            <li>
+              <strong>Verantwortlicher</strong>
+              <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist die im Impressum genannte Person.</p>
+            </li>
+            <li>
+              <strong>Hosting und Datensicherheit</strong>
+              <p><strong>SSL- bzw. TLS-Verschlüsselung</strong> Diese Website nutzt eine SSL- bzw. TLS-Verschlüsselung, um die Übertragung vertraulicher Inhalte zu schützen und sicherzustellen, dass Daten für Dritte nicht mitlesbar sind.</p>
+              <p><strong>Hosting über GitHub Pages</strong> Wir hosten unsere Website bei der GitHub Inc., 88 Colin P. Kelly Jr. St, San Francisco, CA 94107, USA. GitHub erfasst automatisch Log-Daten (z. B. IP-Adresse), um die Sicherheit des Dienstes zu gewährleisten. Rechtsgrundlage ist unser berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO).</p>
+              <p>Weitere Informationen: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a>.</p>
+            </li>
+            <li>
+              <strong>Analyse-Tools (Google Analytics 4 via Google Tag)</strong>
+              <p>Wir nutzen Google Analytics 4 (GA4) der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland („Google“). Die Datenerhebung erfolgt über den Google Tag (gtag.js).</p>
+              <p><strong>IP-Verarbeitung:</strong> Die IP-Adresse wird bei GA4 standardmäßig nicht protokolliert oder dauerhaft gespeichert. Sie wird lediglich kurzfristig zur Ermittlung des groben Standorts (Land/Stadt) verarbeitet und unmittelbar nach der Übermittlung verworfen.</p>
+              <p><strong>Zweck:</strong> Analyse des Nutzerverhaltens zur Optimierung unseres Webangebots.</p>
+              <p><strong>Rechtsgrundlage:</strong> Ihre ausdrückliche Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).</p>
+              <p>Details darüber, wie Google Daten von Websites verwendet, auf denen unsere Tags zum Einsatz kommen, finden Sie hier: <a href="https://policies.google.com/technologies/partner-sites">Partner Sites</a>.</p>
+              <p>Informationen zum Datenschutz bei Google Analytics finden Sie hier: <a href="https://support.google.com/analytics/answer/7318509?hl=en">Safeguarding your data</a>.</p>
+            </li>
+            <li>
+              <strong>Pflichtangaben nach Art. 13 DSGVO</strong>
+              <p><strong>Speicherdauer:</strong> Wir speichern personenbezogene Daten nur so lange, wie es für den jeweiligen Zweck (z. B. Web-Hosting oder Analyse) erforderlich ist, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
+              <p><strong>Empfänger der Daten:</strong> Empfänger der Daten sind die oben genannten Dienstleister (GitHub, Google), mit denen entsprechende Auftragsverarbeitungsverträge (AVV) gemäß Art. 28 DSGVO geschlossen wurden.</p>
+              <p><strong>Ihre Rechte:</strong> Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer Daten sowie das Recht auf Datenübertragbarkeit und das Recht, Einwilligungen jederzeit zu widerrufen.</p>
+              <p><strong>Beschwerderecht bei der Aufsichtsbehörde:</strong> Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer Daten durch uns zu beschweren (z. B. beim Bayerischen Landesamt für Datenschutzaufsicht – BayLDA).</p>
+              <p><strong>Stand:</strong> 29. Januar 2026</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="consent-banner" id="consent-banner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+      <div class="consent-text">
+        This site uses analytics to understand traffic. You can opt in or out.
+      </div>
+      <div class="consent-actions">
+        <button class="consent-button consent-decline" id="consent-decline" type="button">Decline</button>
+        <button class="consent-button consent-accept" id="consent-accept" type="button">Accept</button>
+      </div>
+    </div>
     <script>
+      // Analytics consent (Google Consent Mode)
+      const GA_TRACKING_ID = 'G-N20KYCQTQ3';
+      const CONSENT_KEY = 'ga_consent';
+
+      function loadAnalytics() {
+        if (window.__gaLoaded) return;
+        window.__gaLoaded = true;
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`;
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
+
+        // Default to denied so GA runs in consent mode
+        gtag('consent', 'default', {
+          ad_storage: 'denied',
+          analytics_storage: 'denied'
+        });
+        gtag('js', new Date());
+        gtag('config', GA_TRACKING_ID, { anonymize_ip: true });
+      }
+
+      function setConsent(value) {
+        try {
+          localStorage.setItem(CONSENT_KEY, value);
+        } catch (error) {
+          // Ignore storage errors
+        }
+      }
+
+      function getConsent() {
+        try {
+          return localStorage.getItem(CONSENT_KEY);
+        } catch (error) {
+          return null;
+        }
+      }
+
+      function hideConsentBanner() {
+        const banner = document.getElementById('consent-banner');
+        if (banner) {
+          banner.classList.add('is-hidden');
+        }
+      }
+
+      function showConsentBanner() {
+        const banner = document.getElementById('consent-banner');
+        if (banner) {
+          banner.classList.remove('is-hidden');
+        }
+      }
+
+      function applyConsent(value) {
+        if (!window.gtag) return;
+        if (value === 'accepted') {
+          gtag('consent', 'update', {
+            ad_storage: 'denied',
+            analytics_storage: 'granted'
+          });
+        } else {
+          gtag('consent', 'update', {
+            ad_storage: 'denied',
+            analytics_storage: 'denied'
+          });
+        }
+      }
+
+      const storedConsent = getConsent();
+      loadAnalytics();
+      if (storedConsent === 'accepted') {
+        applyConsent('accepted');
+        hideConsentBanner();
+      } else if (storedConsent === 'declined') {
+        applyConsent('declined');
+        hideConsentBanner();
+      } else {
+        showConsentBanner();
+      }
+
+      const consentAccept = document.getElementById('consent-accept');
+      const consentDecline = document.getElementById('consent-decline');
+      if (consentAccept) {
+        consentAccept.addEventListener('click', function() {
+          setConsent('accepted');
+          applyConsent('accepted');
+          hideConsentBanner();
+        });
+      }
+      if (consentDecline) {
+        consentDecline.addEventListener('click', function() {
+          setConsent('declined');
+          applyConsent('declined');
+          hideConsentBanner();
+        });
+      }
+
+      // Legal pane controls
+      const legalPane = document.getElementById('legal-pane');
+      const legalPaneClose = document.getElementById('legal-pane-close');
+      const legalLink = document.getElementById('legal-link');
+
+      function openLegalPane() {
+        legalPane.classList.add('is-open');
+        legalPane.setAttribute('aria-hidden', 'false');
+      }
+
+      function closeLegalPane() {
+        legalPane.classList.remove('is-open');
+        legalPane.setAttribute('aria-hidden', 'true');
+      }
+
+      if (legalLink) {
+        legalLink.addEventListener('click', openLegalPane);
+      }
+
+      if (legalPaneClose) {
+        legalPaneClose.addEventListener('click', closeLegalPane);
+      }
+      if (legalPane) {
+        legalPane.addEventListener('click', function(event) {
+          if (event.target === legalPane) {
+            closeLegalPane();
+          }
+        });
+      }
+      document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+          closeLegalPane();
+        }
+      });
+
       // Function to fetch citation count from Google Scholar (with fallbacks)
       async function fetchCitationCount(citationId, badgeId) {
         const scholarUrl = `https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PATfNhwAAAAJ&citation_for_view=${citationId}`;
